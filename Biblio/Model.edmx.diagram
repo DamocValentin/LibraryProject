@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="3f7160c17d1641bd80a8b03e1ede5dc9" Name="Diagram1" >
+        <EntityTypeShape EntityType="Model.Gen" Width="1.5" PointX="9.375" PointY="1.125" />
+        <EntityTypeShape EntityType="Model.Autor" Width="1.5" PointX="12.25" PointY="4" />
+        <EntityTypeShape EntityType="Model.Carte" Width="1.5" PointX="9.375" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Imprumut" Width="1.5" PointX="6.125" PointY="3.5" />
+        <EntityTypeShape EntityType="Model.Cititor" Width="1.5" PointX="1.375" PointY="2.25" />
+        <EntityTypeShape EntityType="Model.Review" Width="1.5" PointX="1.375" PointY="5.25" />
+        <AssociationConnector Association="Model.CarteAutor" />
+        <AssociationConnector Association="Model.GenCarte" />
+        <AssociationConnector Association="Model.ImprumutCarte" />
+        <AssociationConnector Association="Model.CititorImprumut" />
+        <AssociationConnector Association="Model.ImprumutReview" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

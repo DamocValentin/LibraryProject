@@ -1,0 +1,52 @@
+﻿@model BibliotecaWeb.Models.RestituireCarte.RestituireCarteModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+<h4>RestituireCarteModel</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="RestituireCarte">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="numeCarte" class="control-label"></label>
+                <input asp-for="numeCarte" class="form-control" />
+                <span asp-validation-for="numeCarte" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="numeAutor" class="control-label"></label>
+                <input asp-for="numeAutor" class="form-control" />
+                <span asp-validation-for="numeAutor" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="prenumeAutor" class="control-label"></label>
+                <input asp-for="prenumeAutor" class="form-control" />
+                <span asp-validation-for="prenumeAutor" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="numeCititor" class="control-label"></label>
+                <input asp-for="numeCititor" class="form-control" />
+                <span asp-validation-for="numeCititor" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="prenumeCititor" class="control-label"></label>
+                <input asp-for="prenumeCititor" class="form-control" />
+                <span asp-validation-for="prenumeCititor" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="textReview" class="control-label"></label>
+                <input asp-for="textReview" class="form-control" />
+                <span asp-validation-for="textReview" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Restituie" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+

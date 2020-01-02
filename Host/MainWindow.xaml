@@ -1,0 +1,20 @@
+﻿<Window x:Class="Host.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Host"
+        mc:Ignorable="d"
+        Title="Server" Height="297.761" Width="525">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="118*"/>
+            <ColumnDefinition Width="84*"/>
+            <ColumnDefinition Width="315*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="Start" Content="Start" HorizontalAlignment="Left" Margin="68,64,0,0" VerticalAlignment="Top" Width="111" Grid.ColumnSpan="2" Height="46" Click="Start_Click"/>
+        <Button x:Name="Stop" Content="Stop" Grid.Column="2" HorizontalAlignment="Left" Margin="126,64,0,0" VerticalAlignment="Top" Width="113" Height="46" Click="Stop_Click"/>
+        <ListBox x:Name="listBox" Grid.ColumnSpan="3" HorizontalAlignment="Left" Height="100" Margin="10,141,0,0" VerticalAlignment="Top" Width="497"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,46 @@
+﻿@model BibliotecaWeb.Models.AchizitieCarteModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Achizitionare">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="titluCarte" class="control-label"></label>
+                <input asp-for="titluCarte" class="form-control" />
+                <span asp-validation-for="titluCarte" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="descrieGen" class="control-label"></label>
+                <input asp-for="descrieGen" class="form-control" />
+                <span asp-validation-for="descrieGen" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="numeAutor" class="control-label"></label>
+                <input asp-for="numeAutor" class="form-control" />
+                <span asp-validation-for="numeAutor" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="prenumeAutor" class="control-label"></label>
+                <input asp-for="prenumeAutor" class="form-control" />
+                <span asp-validation-for="prenumeAutor" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="numar_de_inserari" class="control-label"></label>
+                <input asp-for="numar_de_inserari" class="form-control" />
+                <span asp-validation-for="numar_de_inserari" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

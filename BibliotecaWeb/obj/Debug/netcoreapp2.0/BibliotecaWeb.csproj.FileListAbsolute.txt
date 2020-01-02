@@ -1,0 +1,11 @@
+E:\facultate\Anul 3\Sem2\TSP.NET\ProiectEntityFramework\BibliotecaWeb\bin\Debug\netcoreapp2.0\BibliotecaWeb.deps.json
+E:\facultate\Anul 3\Sem2\TSP.NET\ProiectEntityFramework\BibliotecaWeb\bin\Debug\netcoreapp2.0\BibliotecaWeb.runtimeconfig.json
+E:\facultate\Anul 3\Sem2\TSP.NET\ProiectEntityFramework\BibliotecaWeb\bin\Debug\netcoreapp2.0\BibliotecaWeb.runtimeconfig.dev.json
+E:\facultate\Anul 3\Sem2\TSP.NET\ProiectEntityFramework\BibliotecaWeb\bin\Debug\netcoreapp2.0\BibliotecaWeb.dll
+E:\facultate\Anul 3\Sem2\TSP.NET\ProiectEntityFramework\BibliotecaWeb\bin\Debug\netcoreapp2.0\BibliotecaWeb.pdb
+E:\facultate\Anul 3\Sem2\TSP.NET\ProiectEntityFramework\BibliotecaWeb\obj\Debug\netcoreapp2.0\BibliotecaWeb.csprojResolveAssemblyReference.cache
+E:\facultate\Anul 3\Sem2\TSP.NET\ProiectEntityFramework\BibliotecaWeb\obj\Debug\netcoreapp2.0\BibliotecaWeb.csproj.CoreCompileInputs.cache
+E:\facultate\Anul 3\Sem2\TSP.NET\ProiectEntityFramework\BibliotecaWeb\obj\Debug\netcoreapp2.0\BibliotecaWeb.AssemblyInfoInputs.cache
+E:\facultate\Anul 3\Sem2\TSP.NET\ProiectEntityFramework\BibliotecaWeb\obj\Debug\netcoreapp2.0\BibliotecaWeb.AssemblyInfo.cs
+E:\facultate\Anul 3\Sem2\TSP.NET\ProiectEntityFramework\BibliotecaWeb\obj\Debug\netcoreapp2.0\BibliotecaWeb.dll
+E:\facultate\Anul 3\Sem2\TSP.NET\ProiectEntityFramework\BibliotecaWeb\obj\Debug\netcoreapp2.0\BibliotecaWeb.pdb

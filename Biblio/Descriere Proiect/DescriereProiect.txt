@@ -1,0 +1,54 @@
+﻿Damoc Valentin, grupa A2
+Documentul a fost realizat in data de 22/04/2018
+
+In proiectul meu este format din 4 mari componente:
+
+1. Prima componenta este un Class Library ce reprezinta API-ul creat in proiectul anterior.
+Aceasta componenta contine urmatoarele clase:
+  - Autor
+  - Carte
+  - Cititor
+  - Gen
+  - Imprumut 
+  - Review
+  - AchizitieCarte
+  - ImprumutareCarte
+  - RestituireCarte
+  - Statistici
+  - DataBaseContext
+
+In clasa AchzitieCarte am creat urmatoarele metode:
+  - getGenIdByName - o metoda ce primeste ca parametru un nume de gen si returneaza Id-ul genului respectiv
+  - getAutorIdByName - o metoda cereturneaza id-ul unui autor pe baza a doi parametrii dati : nume autor si prenume autor
+  - achizitie - o metoda ce primeste ca parametrii : titluCarte, descrieGen, numeAutor, prenumeAutor, numar_de_inserari si are ca scop cumpararea de carti pentru
+biblioteca
+
+In clasa ImprumutareCarte am creat urmatoarele metode:
+  - getAllGens - o metoda ce returneaza toate denurile din baza de date
+  - existaCititor - o metoda ce verifica daca un cititor exista in baza de date
+  - getCititorId - o metoda ce returneaza id-ul unui cititor daca exista, sau creaza cititorul respectiv si apoi ii returneaza id-ul
+  - getCartiDupaGen - o metoda ce returneaza o lista de carti in functie de genul dat ca parametru
+  - getStare - o functie ce returneaza starea unui cititor
+  - realizareImprumut - o metoda ce realizeaza pasii ceruti la subpunctul in care se imprumuta o carte
+
+In clasa RestituireCarte am creat urmatoarea metoda:
+  - restituire - ce primeste ca input numeCarte, numeAutor, prenumeAutor, numeCititor, prenumeCititor, textReview si modifica campul data restituire din tabela imprumut
+si adauga un review
+
+In clasa Statistici am creat urmatoarele metode:
+  - getCititoriPerioada - o metoda ce primeste ca input doua variabile de tipul data si returneaza cititorii ce au frecventat biblioteca in acel interval de timp
+  - getCartiSolicitate - o metoda ce returneaza cele mai cautate carti( ele sunt jumatate din cartile existente in baza de date)
+  - getAutoriCautati - o metoda ce returneaza cei mai cautati autori(acesti autori sunt cei ce au scris cartile cele mai solicitate)
+  - getGenuriCautate - o metoda ce returneaza cele mai cautate genuri(aceste genuri sunt cele apartenente cartilor cele mai cautate)
+  - getReviews - o functie ce returneaza toate review-urile unei carti
+
+La ceasta componenta am facut mici modificari pentru a nu mai avea contextul vizibil.
+
+2. Cea dea doua componenta este serviciul WCF ce contine operatii ce apeleaza metodele din API-ul anterior. 
+Aici am creat clasele POCO, o interfata IBiblioteca in care am definit contractul pentru serviciu, si o clasa BibliotecaService in care am implementat interfata.
+Pentru a face legatura intre noile clase create si cele din API am folosit Automapperul.
+
+3. A treia componenta este Hostul incare am scris codul pentru inregistrarea serviciului.
+
+4.Ultima componenta este clientul. Aici am folosit Windows Forms-ul din proiectul anterior, pe care l-am modificat astfel incat sa foloseasca serviciul in 
+loc de API.

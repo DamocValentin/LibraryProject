@@ -1,0 +1,42 @@
+﻿@model BibliotecaWeb.Models.CititorModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="AlegereGen">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="numeCititor" class="control-label"></label>
+                <input asp-for="numeCititor" class="form-control" />
+                <span asp-validation-for="numeCititor" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="prenumeCititor" class="control-label"></label>
+                <input asp-for="prenumeCititor" class="form-control" />
+                <span asp-validation-for="prenumeCititor" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="adresaCititor" class="control-label"></label>
+                <input asp-for="adresaCititor" class="form-control" />
+                <span asp-validation-for="adresaCititor" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="emailCititior" class="control-label"></label>
+                <input asp-for="emailCititior" class="form-control" />
+                <span asp-validation-for="emailCititior" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Autentificare" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
